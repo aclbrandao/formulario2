@@ -1,68 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-    <style>
-        
-    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>index.html</title>
 </head>
 <body style="background-color: rgb(224, 238, 243);">
-   <div>
-       <h1 id="titulo"> Dados do cliente</h1>
-       <p id="subtitulo">Preencha os dados abaixo:</p>
-       <br>
-   </div> 
-   <form action="respostas.txt" style="background-size: 50%; border: 4px; width: 50%; border-style:groove; border-color: black;">
-            <div>
-                <label for="nome">Nome: </label>
-                <input type="text" name="nome" id="nome" required>
-            </div>
-            <div>
-                <label for="nascimento">Data de nascimento:</label>
-                <input type="date" id="nascimento" required>
-            </div>
-            <div>
-                <label for="sexo">Sexo</label required>
-                <input type="radio" name="sexo" id="sexo" value="feminino" >
-                <label for="feminino">Feminino</label>
-                <input type="radio" name="sexo" id="sexo" value="masculino">
-                <label for="masculino">Masculino</label>
-                <input type="radio" name="sexo" id="sexo" value="nbinario">
-                <label for="nabinario">Não binário</label>
-            </div> 
-            <div>
-                <label for="endereco">Endereço:</label><br>
-                <label>Logradouro:</label>
-                <input type="text" name="logradouro" id="endereco" required><br>
-                <label>Bairro:</label>
-                <input type="text" name="bairro" id="endereco" required><br>
-                <label>Cidade:</label>
-                <input type="text" name="cidade" id="endereco" required><br>
-            </div>
-            <div>
-                <label>UF:</label>
-                <select id="UF" required>
-                    <option selected disabled value="">Selecione</option>
-                    <option>DF</option>
-                    <option>GO</option>
-                    <option>MT</option>
-                    <option>MS</option>
-                </select>
-            </div>
-            <div>
-                <label>Email:</label>
-                <input type="email" name="email" id="email" required>
-            </div>
-            <div>
-                <button type="reset">Limpar</button>
-                <button type="submit">Enviar</button>
-            </div>
-    </form><br>
-    <p style="font-size:larger; line-height: 200%; background-color: rgb(238, 170, 88); text-decoration-line: underline; text-align: center;">
-        <a href="index.html">Perguntas</a> 
-    </p>
+    <table border="1"style="margin: auto; width: 80%; text-align:center">
+        <tr><td><h2>Componentes do grupo:</h2></td></tr>
+        <tr><td>Alexandra Flormbel</td></tr>
+        <tr><td>Ana Clara Brandão</td></tr><br>
+        <tr><td>Hytalo Araújo</td></tr>
+        <tr><td>Luciana Souza</td></tr>
+    </table>
+
+<h2>Perguntas:</h2>
+<ol type="a">
+    <li>Na tag < input > com atributo type="text", para que serve o atributo "placeholder"?</li>
+        <p style="font-style: oblique;">O Placeholder resolve esse problema inserindo, dentro do input, um texto que será apagado quando começar a digitar dentro do campo, e mostrado de novo ao perder o focus do elemento e o conteúdo seja vazio.</p>
+    <li>Na tag < input > com atributo type="radio" ou type="radio", para que serve o atributo "checked"?</li>
+    <p style="font-style: oblique;">Os elementos do checked são renderizados como caixas quadradas por padrão e são marcados (com uma marca de seleção) quando ativados, assim como você vê nos formulários de governo. A aparência exata depende da configuração do sistema operacional em que o navegador está sendo executado. As caixas de seleção permitem que você selecione valores únicos para enviar no formulário</p>
+    <li>Na tag < input > para que serve o atributo "value"?</li>
+        <p style="font-style: oblique;">Você deve usar o atributo value para definir o valor enviado por este item.</p>
+    <li> Que atributo deve ser utilizado para agrupar vários botões de rádio em um formulário de modo que apenas um deles fique marcado de cada vez?</li>
+        <p style="font-style: oblique;">É utilizado o atributo < input type="radio" > que já define somente uma possibilidade de marcação. </p>
+    <li>Para que serve a tag < label >? Para que serve o atributo "for" nessa tag?</li>
+        <p style="font-style: oblique;">A tag < label > define um rótulo para vários elementos, ou seja, dá o nome dos campos a serem preenchidos no formulário. O "for" especifica a qual elemento de formulário um rótulo está vinculado.</label></p>
+    <li>Na tag < option > para que serve o atributo "selected"?</li>
+        <p style="font-style: oblique;">Serve para uma pré-marcação, para que ao carregar o formulário já esteja selecionado uma opção. No geral é usada na opção  "Selecione" ou "Escolha" e com atributo de valor vazio, no caso de não marcação de opção do usuário.</p>
+    <li>Nas tags de formulário para que serve o atributo "required"?</li>
+        <p style="font-style: oblique;">O atributo "Required" é usado para especificar um campo de entrada que deve ser preenchido antes de enviar o formulário.<br>
+        Funciona para: texto, pesquisa,url,email,senha, data. Escrito na seguinte sintaxe:< input required></p>
+    <li>Na tag < form > para que serve o atributo "action"?</li>
+        <p style="font-style: oblique;"> O atributo "action" especifica para onde enviar os dados do formulário, seu valor deve ser um URL válido, senão serão enviados para um URL da página que contém o formulário.<br>
+        Sintaxe < form action="url" > pode ser absolute (quando coloca o endereço de um site externo) ou relative (interno)</p>
+    <li>Na tag < form > para que serve o atributo "method"?</li>
+        <p style="font-style: oblique;">É um atributo que define como os dados são enviados (os daos de formulário são enviados para a página especificada no "action").<br>
+            podem ser enviados como variáveis de URL (method="get") ou como transação de postagem HTTP (method="post").
+            <p>Observações sobre GET</p>
+            <ul style="list-style-type: circle;">
+            <li>Anexa dados do formulário ao URL em pares de nomes/valores </li>
+            <li>Tem comprimento limitado (3.000 caracteres)</li>
+            <li>Nunca use para colocar dados confidenciais</li>
+            <li>Útil para envios de formulários em que o usuário deseja marcar o resultado</li>
+            <li>Melhor usar para dados não seguros.</li></ul>
+            <p>Observações sobre POST</p>
+            <ul style="list-style-type: circle;">
+            <li>Anexa dados do fromulário dentro do corpo da solicitação HTTP,</li>
+            <li>Não tem limitação de tamanho,</li>
+            <li>Os envios de formulários com Post não podem ser marcados.</li></ul>
+        </p>
+    <li>Para que o valor digitado de uma senha não apareça na barra de endereços do navegador, qual deve ser o valor do atributo "method" na tag< form>?</li>
+    <p style="font-style: oblique;">Para tirar proveito do “sigilo”, este tipo de campo deve ser enviado pelo método POST.</p>
+    <p style="font-style: oblique;">Por exemplo, se o usuário digitar “pcpw02” e enviar o formulário, a informação recebida pelo programa será “senha=pcpw02”: Senha:</p>
+    <li>Qual valor deve ser informado no atributo "method" na tag< form> em um formulário que será usado para fazer upload de arquivos?</li>
+    <p style="font-style: oblique;"> Será necessário utilizar o atributo “enctype =” multipart / form-data ” dentro da tag do formulário.</p>
+</ol>
+<p style="font-size:larger; line-height: 200%; background-color: rgb(238, 170, 88); text-decoration-line: underline; text-align: center;">
+<a href="https://aclbrandao.github.io/index.html/index.html">Formulário</a></p>
 </body>
 </html>
